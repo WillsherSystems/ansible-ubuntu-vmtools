@@ -1,0 +1,11 @@
+---
+- name: Install VMWare Tools
+  apt: >
+    state=present
+    name=open-vm-tools
+    dpkg_options='force-confnew'
+  when: "ansible_virtualization_type == 'VMware'"
+
+- name: Install Cloud tools
+  apt: name=linux-cloud-tools-virtual state=present
+  when: "ansible_virtualization_type == 'VirtualPC'"

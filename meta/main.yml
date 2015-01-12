@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Matt Willsher
+  description: Install VM Guest Tools
+  company: Willsher Systems
+  license: LGPLv3
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - utopic
+  categories:
+  - cloud
+  - system
+dependencies: []
